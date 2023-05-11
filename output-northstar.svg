@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="500" class="container"><defs><style type="text/css"><![CDATA[ 
+:root { 
+  --container: #fffff;
+  --unstable-fill: #ee538b;
+  --prerelease-fill: #6929c4;
+  --active-fill: #012749;
+  --maintenance-fill: #009d9a;
+  --text: #161616;
+  --text-on-color: #ffffff;
+  --text-inverse: #ffffff;
+  --border: #e0e0e0;
+}
+
+@media (prefers-color-scheme: light) { 
+  :root { 
+    --container: #fffff;
+    --unstable-fill: #ee538b;
+    --prerelease-fill: #6929c4;
+    --active-fill: #012749;
+    --maintenance-fill: #009d9a;
+    --text: #161616;
+    --text-on-color: #ffffff;
+    --text-inverse: #ffffff;
+    --border: #e0e0e0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { 
+    --container: #161616;
+    --unstable-fill: #fff1f1;
+    --prerelease-fill: #d4bbff;
+    --active-fill: #4589ff;
+    --maintenance-fill: #08bdba;
+    --text: #f4f4f4;
+    --text-on-color: #161616;
+    --text-inverse: #161616;
+    --border: #393939;
+  }
+}
+
+
+.container {
+  background: var(--container);
+}
+.prerelease {
+  fill: var(--prerelease-fill);
+}
+.active {
+  fill: var(--active-fill);
+}
+.maintenance {
+  fill: var(--maintenance-fill);
+}
+.unstable {
+  fill: var(--unstable-fill);
+}
+.bar-join {
+  fill: var(--border);
+}
+.bar-join.unstable, .bar-join.prerelease {
+  display: none;
+}
+.tick text {
+  font: 16px IBM Plex Sans;
+  fill: var(--text);
+}
+.axis--y .tick text {
+  text-anchor: end;
+}
+.unstable ~ .label {
+  fill: var(--text-inverse);
+}
+.label {
+  fill: var(--text-on-color);
+  font: 20px IBM Plex Sans;
+  text-anchor: start;
+  dominant-baseline: middle;
+  text-transform: capitalize;
+} ]]></style></defs><g id="bar-container" transform="translate(110, 64)"><g class="axis axis--x" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><g class="tick" opacity="1" transform="translate(0.08537347448904573,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2015</text></g><g class="tick" opacity="1" transform="translate(149.65970077929717,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2016</text></g><g class="tick" opacity="1" transform="translate(299.6438207616527,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2017</text></g><g class="tick" opacity="1" transform="translate(449.2181480664608,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2018</text></g><g class="tick" opacity="1" transform="translate(598.7924753712689,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2019</text></g><g class="tick" opacity="1" transform="translate(748.366802676077,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2020</text></g><g class="tick" opacity="1" transform="translate(898.3509226584325,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2021</text></g><g class="tick" opacity="1" transform="translate(1047.9252499632407,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2022</text></g><g class="tick" opacity="1" transform="translate(1197.4995772680488,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2023</text></g><g class="tick" opacity="1" transform="translate(1347.073904572857,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2024</text></g><g class="tick" opacity="1" transform="translate(1497.0580245552126,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2025</text></g><g class="tick" opacity="1" transform="translate(1646.6323518600207,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5" stroke-dasharray="2,2"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2026</text></g><g class="tick" opacity="1" transform="translate(1796.2066791648288,0)"><line stroke="#89a19d" y2="404" x1="0.5" x2="0.5"></line><text fill="#000" y="0" x="0.5" dy="-10">Jan 2027</text></g></g><g class="axis axis--y" fill="none" font-size="10" font-family="sans-serif" text-anchor="start"><g class="tick" opacity="1" transform="translate(0,202)"><line stroke="#e1e7e7" x2="1858" y1="0.5" y2="0.5"></line><text fill="#000" x="0" y="0.5" dy="0.32em" dx="-10">Northstar 18</text></g><line y1="404" y2="404" x2="1858" stroke="#89a19d"></line></g><g><rect class="bar maintenance" x="747.8716365240406" y="93.23076923076921" width="561.0061755624173" height="217.53846153846158"></rect><rect class="bar-join maintenance" x="746.8716365240406" y="93.23076923076921" width="2" height="217.53846153846158" style="opacity: 1;"></rect><text class="label" x="762.8716365240406" y="204" style="opacity: 1;">maintenance</text></g><g><rect class="bar active" x="24.99735333039259" y="93.23076923076921" width="722.874283193648" height="217.53846153846158"></rect><rect class="bar-join active" x="23.99735333039259" y="93.23076923076921" width="2" height="217.53846153846158" style="opacity: 1;"></rect><text class="label" x="39.997353330392585" y="204" style="opacity: 1;">active</text></g><g><rect class="bar prerelease" x="24.99735333039259" y="93.23076923076921" width="0" height="217.53846153846158"></rect><rect class="bar-join prerelease" x="23.99735333039259" y="93.23076923076921" width="2" height="217.53846153846158" style="opacity: 0;"></rect><text class="label" x="39.997353330392585" y="204" style="opacity: 0;">prerelease</text></g></g></svg>
